@@ -1,0 +1,13 @@
+{
+    "name": "mkai.js"
+  , "description": "Math 改"
+  , "version": "0.0.1"
+  , "homepage": "https://github.com/youhe/mkai.js"
+  , "author": "yohei kojima"
+  , "keywords": ["Math"]
+  , "main": "./makai.js"
+  , "repository": {
+      "type": "git"
+    , "url": "https://github.com/youhe/mkai.js.git"
+  }
+}
