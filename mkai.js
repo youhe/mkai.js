@@ -10,7 +10,21 @@
   if (typeof define == 'function') define(definition);
   else if (typeof module != 'undefined') module.exports = definition;
   else this[name] = definition;
-}('mkai', {
+}('Mkai', {
+
+  /*********************************
+    ラジアン -> 角度
+  *********************************/
+  degree: function(val) {
+    return val / Math.PI * 180;
+  },
+
+  /*********************************
+    角度 -> ラジアン
+  *********************************/
+  radian: function(val) {
+    return val * Math.PI / 180;
+  },
 
   /*********************************
     val を min と max の間に制限する

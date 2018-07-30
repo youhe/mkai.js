@@ -2,7 +2,9 @@
 
 ## functions
 
+	degree
     constrain
+    radian
     random
     randomF
     map
