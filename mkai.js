@@ -11,7 +11,6 @@
   else if (typeof module != 'undefined') module.exports = definition;
   else this[name] = definition;
 }('Mkai', {
-
   /*********************************
     ラジアン -> 角度
   *********************************/
@@ -31,6 +30,25 @@
   *********************************/
   constrain: function(val, min, max) {
     return Math.min(Math.max(val, min), max);
+  },
+
+  /*********************************
+   * 任意の桁で四捨五入
+   * @param {number} value 四捨五入する数値
+   * @param {number} base どの桁で四捨五入するか（10→10の位、0.1→小数第１位）
+   * @return {number} 四捨五入した値
+  *********************************/
+  round(val, base) {
+    return Math.round(value * base) / base;
+  }
+
+  /*********************************
+   任意の桁で切り捨て
+    10 -> 10の位
+    0.1 -> 小数第１位
+  *********************************/
+  floor: function(val, base) {
+    return Math.floor(val * base) / base;
   },
 
   /*********************************
