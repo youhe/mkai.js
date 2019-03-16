@@ -38,9 +38,9 @@
    * @param {number} base どの桁で四捨五入するか（10→10の位、0.1→小数第１位）
    * @return {number} 四捨五入した値
   *********************************/
-  round(val, base) {
+  round: function(val, base) {
     return Math.round(value * base) / base;
-  }
+  },
 
   /*********************************
    任意の桁で切り捨て
